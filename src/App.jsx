@@ -1,12 +1,34 @@
-import React from 'react'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import Index from "./Components/pages/home/Index";
+import Login from "./Components/pages/login/Login";
+import Signup from "./Components/pages/signup/Signup";
+import BikesMain from "./Components/pages/bikes/BikesMain";
+import BikesDetailsMain from "./Components/pages/bikes/BikesDetailsMain";
+import AboutUsMain from "./Components/pages/about/AboutUsMain";
+import ContactMain from "./Components/pages/contact/ContactMain";
+
+export default function App() {
   return (
-    <div>
-       <h1 className='bg-red-600 text-4xl'>Hello</h1>
-       <div className='animate-spin text-2xl'>A</div>
-    </div>
-  )
-}
+    <Routes>
+      {/* Home page */}
+      <Route path="/" element={<Index />} />
 
-export default App
+      {/* Login page */}
+      <Route path="/login" element={<Login />} />
+
+      {/* Signup page */}
+      <Route path="/signup" element={<Signup />} />
+
+      {/* Bikes */}
+      <Route path="/bikesmain" element={<BikesMain />} />
+      <Route path="/bikesdetailsmain/:id" element={<BikesDetailsMain />} />
+
+      {/* About Us */}
+      <Route path="/contactmain" element={<ContactMain />} />
+      {/* About Us */}
+      <Route path="/aboutusmain" element={<AboutUsMain />} />
+    </Routes>
+  );
+}
