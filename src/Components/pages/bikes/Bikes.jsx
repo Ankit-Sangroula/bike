@@ -73,7 +73,7 @@ export default function Bikes() {
               className="w-full h-58 object-cover rounded-lg mb-4"
             />
             <h3 className="font-semibold text-lg mb-2">{bike.name}</h3>
-            <p className="text-gray-600 text-sm flex-grow mb-4">{bike.detail}</p>
+            <p className="text-gray-600 text-sm grow mb-4">{bike.detail}</p>
             <div className="flex justify-between items-center">
               <span className="font-bold">{bike.price}</span>
               <button

@@ -171,7 +171,7 @@ export default function BikesDetails() {
     <div className="min-h-screen font-sans px-4">
       
 
-      <div className="max-w-[1100px] mx-auto my-10 space-y-10">
+      <div className="max-w-6xl mx-auto my-10 space-y-10">
         {/* Top Box */}
         <div className="bg-gray-100 rounded-xl shadow-md p-6 grid md:grid-cols-2 gap-6">
           <img

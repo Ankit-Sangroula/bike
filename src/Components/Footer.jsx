@@ -9,7 +9,7 @@ export default function Footer() {
       {/* Top Footer */}
       <div className="flex flex-wrap justify-between mb-5">
         {/* Left Side */}
-        <div className="flex-1 min-w-[200px] text-left">
+        <div className="flex-1 min-w-50 text-left">
           <div className="mb-2">Built for riders. Engineered for performance.</div>
           <div>
             We design and deliver high-quality bikes that combine power,
@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         {/* Right Side Quick Links */}
-        <div className="flex-1 min-w-[150px] text-right mt-4 sm:mt-0">
+        <div className="flex-1 min-w-37.5 text-right mt-4 sm:mt-0">
           <div className="font-semibold mb-2">Quick Links</div>
           <div className="text-gray-400 mb-1 cursor-pointer hover:text-white" onClick={() => navigate("/")}>Home</div>
           <div className="text-gray-400 mb-1 cursor-pointer hover:text-white"  onClick={() => navigate("/BikesMain")}>Bikes</div>

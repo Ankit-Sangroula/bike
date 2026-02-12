@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Content Area */}
       <div className="flex flex-wrap items-center justify-between gap-10">
         {/* Left Text */}
-        <div className="flex-1 min-w-[300px]">
+        <div className="flex-1 min-w-75">
           <p className="text-lg md:text-xl leading-relaxed mb-5 max-w-xl">
             Explore a wide range of bikes designed for every kind of ride. From
             smooth city cruisers to powerful off-road machines, learn about
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 min-w-[300px] text-right">
+        <div className="flex-1 min-w-75 text-right">
           <img
             src="/bike1.png"
             alt="bike"
