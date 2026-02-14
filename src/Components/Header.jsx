@@ -27,6 +27,14 @@ export default function Header() {
         >
           Bikes
         </span>
+
+        <span
+          className="text-black font-medium cursor-pointer hover:text-green-500 transition-colors"
+          onClick={() => navigate("/adminaddbikesmain")}
+        >
+          Admin
+        </span>
+
         <span
           className="text-black font-medium cursor-pointer hover:text-green-500 transition-colors"
           onClick={() => navigate("/contactmain")}

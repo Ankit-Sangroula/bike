@@ -9,6 +9,8 @@ import BikesDetailsMain from "./Components/pages/bikes/BikesDetailsMain";
 import AboutUsMain from "./Components/pages/about/AboutUsMain";
 import ContactMain from "./Components/pages/contact/ContactMain";
 
+import AdminAddBikesMain from "./Components/pages/admin/AdminAddBikesMain";
+
 export default function App() {
   return (
     <Routes>
@@ -24,8 +26,10 @@ export default function App() {
       {/* Bikes */}
       <Route path="/bikesmain" element={<BikesMain />} />
       <Route path="/bikesdetailsmain/:id" element={<BikesDetailsMain />} />
+      {/* Admin */}
+      <Route path="/adminaddbikesmain" element={<AdminAddBikesMain />}/>
 
-      {/* About Us */}
+      {/* Contact */}
       <Route path="/contactmain" element={<ContactMain />} />
       {/* About Us */}
       <Route path="/aboutusmain" element={<AboutUsMain />} />
